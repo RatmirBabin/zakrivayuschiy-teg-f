@@ -51,3 +51,39 @@ ol {
   clip-path: inset(50%);
   white-space: nowrap;
 }
+
+/* ----добавил обнуляющих стилей ----- */
+
+h1,
+h2,
+h3 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+button {
+  background-color: transparent;
+  background: none;
+  cursor: pointer;
+  display: inline-block;
+
+  outline: none;
+  border: none;
+}
+
+input:focus,
+input:active,
+button:focus,
+button:active {
+  outline: none;
+}
+
+a,
+a:link,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
