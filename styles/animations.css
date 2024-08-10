@@ -80,10 +80,12 @@
 
 .like-icon.is-liked .heart {
   animation: heart-scale 0.3s ease-in 0.1s 1 alternate;
+  transform-origin: center;
 }
 
 .like-icon.is-liked .sparks {
   animation: heart-sparks 0.3s ease-in 0.3s 1 alternate;
+  transform-origin: center;
 }
 
 .like-icon.is-liked .contour {
@@ -92,6 +94,7 @@
 }
 
 .like-icon.is-liked .core {
+  transition: fill 0.3s linear;
   fill: var(--sparks-color);
 }
 
