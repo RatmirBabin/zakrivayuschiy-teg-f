@@ -14,10 +14,6 @@
 
 */
 
-.none {
-  display: none;
-}
-
 .page {
   min-inline-size: 320px;
   min-block-size: 100dvb;
@@ -39,8 +35,6 @@
 
 /* header */
 
-/* font-family: Шрифт */
-
 .header {
   background-color: var(--background-color);
   margin-bottom: 100px;
@@ -51,8 +45,9 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  justify-content: end;
   align-items: center;
-  font-family: var(--accent-font-family, "PressStart2P"), "fantasy";
+  font-family: var(--accent-font-family, "PressStart2P"), fantasy;
   text-transform: uppercase;
   border: 2px solid currentColor;
 }
@@ -79,6 +74,8 @@
   flex-direction: column;
   gap: 0.625em;
 }
+
+/* +++++++++++ */
 
 .theme-menu__button {
   font-weight: 400;
@@ -131,7 +128,6 @@
 .main {
   display: flex;
   flex-direction: column;
-
   gap: 50px;
 }
 
@@ -154,15 +150,10 @@
 .card__image-picture {
   font-size: 0;
   display: block;
-  /* object-fit: cover;
-  object-position: center; */
-  /* width: 100%; */
-  /* height: 100%; */
 }
 
 .card-pic {
   font-size: 0;
-  /* display: block; */
   object-fit: cover;
   object-position: center;
   width: 100%;
@@ -177,7 +168,7 @@
   top: 25px;
   right: 25px;
   z-index: 1;
-  font-family: var(--accent-font-family, "PressStart2P"), "fantasy";
+  font-family: var(--accent-font-family, "PressStart2P"), fantasy;
   text-transform: uppercase;
   font-size: 14px;
   font-weight: 400;
@@ -265,7 +256,7 @@
   mix-blend-mode: difference;
   color: var(--text-btn-difference);
   font-size: 14px;
-  font-family: var(--accent-font-family, "PressStart2P"), "fantasy";
+  font-family: var(--accent-font-family, "PressStart2P"), fantasy;
   line-height: 0.9;
 }
 
@@ -275,7 +266,7 @@
   justify-content: center;
   align-items: center;
   gap: 8px;
-  font-family: var(--accent-font-family, "PressStart2P"), "fantasy";
+  font-family: var(--accent-font-family, "PressStart2P"), fantasy;
   color: var(--accent-color);
   padding: 15px 19px;
   margin: 0 auto 100px;
@@ -287,11 +278,6 @@
   height: 21px;
   color: var(--text-btn-difference);
   mix-blend-mode: difference;
-}
-
-.dialog__floppy {
-  width: 21px;
-  height: 21px;
 }
 
 /* heart */
@@ -319,7 +305,7 @@
   padding: 30px;
   color: var(--accent-color);
   background-color: var(--background-color);
-  font-family: var(--accent-font-family, "PressStart2P"), "fantasy";
+  font-family: var(--accent-font-family, "PressStart2P"), fantasy;
   max-width: 353px;
   text-transform: uppercase;
   line-height: 1.5;
@@ -355,7 +341,7 @@
 }
 
 .dialog__descr {
-  font-family: var(--accent-font-family, "PressStart2P"), "fantasy";
+  font-family: var(--accent-font-family, "PressStart2P"), fantasy;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.5;
@@ -367,6 +353,20 @@
 @media (width <= 375px) {
   .header {
     padding-top: 120px;
+  }
+
+  .header__title {
+    margin-bottom: 24px;
+    line-height: 100%;
+  }
+
+  .header__theme-menu {
+    margin-left: 21px;
+  }
+
+  .card__image-logo {
+    top: 22px;
+    right: 13px;
   }
 
   .btn-save {
