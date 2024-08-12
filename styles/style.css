@@ -45,7 +45,6 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  justify-content: end;
   align-items: center;
   font-family: var(--accent-font-family, "PressStart2P"), fantasy;
   text-transform: uppercase;
